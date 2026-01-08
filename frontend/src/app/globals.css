@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ok: #10B981;
+  --color-warning: #F59E0B;
+  --color-critical: #F43F5E;
+  --color-info: #3B82F6;
+  --color-primary: #14B8A6;
+  --color-primary-dark: #0F766E;
+  --color-primary-light: #CCFBF1;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Ensure touch targets are at least 44px */
+button,
+a,
+input[type="checkbox"],
+input[type="radio"] {
+  min-height: 44px;
+  min-width: 44px;
+}
