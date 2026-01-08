@@ -1,5 +1,5 @@
 -- Seed data for medical supplies
--- This file creates all 160+ medical supply items organized by category
+-- This file creates all 156 medical supply items organized by category
 
 -- Note: Using demo agency ID: 11111111-1111-1111-1111-111111111111
 -- Category IDs reference the categories created in 01_categories.sql
