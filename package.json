@@ -1,0 +1,23 @@
+{
+  "name": "swazzers",
+  "version": "1.0.0",
+  "description": "Swazzers - A basic webapp built with npm",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run copy:html && npm run copy:js && npm run copy:css",
+    "clean": "rm -rf dist && mkdir -p dist",
+    "copy:html": "copyfiles -f public/*.html dist",
+    "copy:js": "copyfiles -f src/*.js dist",
+    "copy:css": "copyfiles -f src/*.css dist",
+    "dev": "npm run build && http-server dist -p 8080 -o",
+    "start": "http-server dist -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "http-server": "^14.1.1"
+  }
+}
