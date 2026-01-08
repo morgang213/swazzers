@@ -177,6 +177,19 @@ class ApiClient {
   async getBelowPar() {
     return this.request('/inventory/below-par');
   }
+
+  // Admin endpoints
+  async getAgency() {
+    return this.request('/admin/agency');
+  }
+
+  async getStations() {
+    return this.request('/admin/stations');
+  }
+
+  async getUnits() {
+    return this.request('/admin/units');
+  }
 }
 
 const apiClient = new ApiClient();

@@ -96,14 +96,29 @@ export default function DashboardPage() {
         <Card className="p-6 mb-8">
           <h2 className="text-xl font-bold mb-4">Quick Actions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Button variant="primary" size="lg" className="w-full">
+            <Button 
+              variant="primary" 
+              size="lg" 
+              className="w-full"
+              onClick={() => alert('Usage recording feature coming soon!')}
+            >
               Record Usage
             </Button>
-            <Button variant="secondary" size="lg" className="w-full">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="w-full"
+              onClick={() => router.push('/inventory')}
+            >
               View Inventory
             </Button>
-            <Button variant="secondary" size="lg" className="w-full">
-              Create Order
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="w-full"
+              onClick={() => router.push('/supplies')}
+            >
+              Manage Supplies
             </Button>
           </div>
         </Card>
