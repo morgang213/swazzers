@@ -9,7 +9,9 @@
     "migrate:latest": "knex migrate:latest",
     "migrate:rollback": "knex migrate:rollback",
     "seed:run": "knex seed:run",
-    "db:setup": "npm run migrate:latest && npm run seed:run"
+    "db:setup": "npm run migrate:latest && npm run seed:run",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.js"
   },
   "keywords": ["ems", "inventory", "medical-supplies"],
   "author": "",
@@ -32,6 +34,8 @@
     "cookie-parser": "^1.4.6"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
   }
 }
